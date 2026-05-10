@@ -501,6 +501,13 @@ body::after {
   .cursor, .cursor-ring { display:none; }
 }
 </style>
+      <style>
+   model-viewer {
+       width: 500px;
+       height: 300px;
+   }
+</style>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
 
@@ -572,7 +579,14 @@ body::after {
       <div class="product-tick" style="transform:rotate(330deg)"></div>
 
       <div class="product-photo-wrap">
-        <img src="assets/img/Hero.jpg" alt="AeroAxis wheel CAD render — top view" />
+    <model-viewer
+    src="model.glb"
+    alt="avatar"
+    shadow-intensity="1"
+    camera-controls
+    auto-rotate
+     >
+    </model-viewer>
       </div>
 
       <!-- Floating spec bubbles -->
@@ -625,7 +639,7 @@ body::after {
   </div>
   <div class="gallery-grid">
     <div class="gallery-cell main reveal">
-      <img src="assets/img/Hero.jpg" alt="AeroAxis — top-down CAD render" />
+      <img src="assets/img/CadRenderTop.jpg" alt="AeroAxis — top-down CAD render" />
       <div class="cell-label">Top View — CAD Render</div>
     </div>
     <div class="gallery-cell reveal reveal-delay-1 cad-panel">
@@ -637,7 +651,7 @@ body::after {
       <div class="cad-label">440C Sealed Bearing Core</div>
     </div>
     <div class="gallery-cell reveal reveal-delay-1" style="background:linear-gradient(135deg,#0c1220,#060810);">
-      <img src="assets/img/Hero.jpg" alt="AeroAxis — detail" style="filter:brightness(0.6) hue-rotate(200deg) saturate(0.7);mix-blend-mode:normal;" />
+      <img src="assets/img/ProfileDetails.jpg" alt="AeroAxis — detail" style="filter:brightness(0.6) hue-rotate(200deg) saturate(0.7);mix-blend-mode:normal;" />
       <div class="cell-label">Profile Detail</div>
     </div>
     <div class="gallery-cell reveal reveal-delay-3 cad-panel">
