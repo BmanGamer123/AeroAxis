@@ -29,11 +29,100 @@
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursor-ring"></div>
 
-<div id="navHTML"></div>
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">⚙</div>
+    AERO<span>AXIS</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#gallery">Product</a></li>
+    <li><a href="#specs">Specs</a></li>
+    <li><a href="#compare">Compare</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
 
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 
-<div id="heroHTML"></div>
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-left">
+    <div class="hero-eyebrow">Precision-Engineered Retail Mobility</div>
+    <h1>
+      THE WHEEL<br>
+      <span class="accent">THAT NEVER</span><br>
+      <span class="outline">QUITS.</span>
+    </h1>
+    <p class="hero-desc">
+      AeroAxis reengineered the shopping cart wheel from the ground up — lighter, stronger, and quieter than anything Costco or Superstore has ever rolled.
+    </p>
+    <div class="hero-load-badge">
+      <div class="badge-num">500<span style="font-size:22px;color:rgba(59,130,246,0.7)">LBS</span></div>
+      <div class="badge-text">
+        <strong>Load-Tested &amp; Certified</strong>
+        Simulated at 2,224N — with a 3×–6× safety factor built in
+      </div>
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary btn-lg">
+        Request Demo
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#specs" class="btn-outline-hero">View Specs →</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="product-stage">
+      <div class="product-glow-ring"></div>
+      <div class="product-ring-outer"></div>
+      <div class="product-ring-inner"></div>
+      <!-- Tick marks -->
+      <div class="product-tick" style="transform:rotate(0deg)"></div>
+      <div class="product-tick" style="transform:rotate(30deg)"></div>
+      <div class="product-tick" style="transform:rotate(60deg)"></div>
+      <div class="product-tick" style="transform:rotate(90deg)"></div>
+      <div class="product-tick" style="transform:rotate(120deg)"></div>
+      <div class="product-tick" style="transform:rotate(150deg)"></div>
+      <div class="product-tick" style="transform:rotate(180deg)"></div>
+      <div class="product-tick" style="transform:rotate(210deg)"></div>
+      <div class="product-tick" style="transform:rotate(240deg)"></div>
+      <div class="product-tick" style="transform:rotate(270deg)"></div>
+      <div class="product-tick" style="transform:rotate(300deg)"></div>
+      <div class="product-tick" style="transform:rotate(330deg)"></div>
+
+      <div class="product-photo-wrap">
+    <model-viewer
+    src="model.glb"
+    alt="avatar"
+    shadow-intensity="1"
+    camera-controls
+    auto-rotate
+     >
+    </model-viewer>
+    
+      </div>
+
+      <!-- Floating spec bubbles -->
+      <div class="spec-float f1">
+        <div class="spec-val">0.95<span style="font-size:14px;color:rgba(59,130,246,.6)">lbs</span></div>
+        <div class="spec-lbl">Assembly Weight</div>
+      </div>
+      <div class="spec-float f2">
+        <div class="spec-val">500<span style="font-size:14px;color:rgba(59,130,246,.6)">lb</span></div>
+        <div class="spec-lbl">Load Tested</div>
+      </div>
+      <div class="spec-float f3">
+        <div class="spec-val">24<span style="font-size:14px;color:rgba(59,130,246,.6)">%</span></div>
+        <div class="spec-lbl">Lighter</div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ═══ STATS BAR ═══ -->
 <div class="stats-bar">
@@ -339,11 +428,34 @@
   </div>
 </section>
 
-<div id="ctaHTML"></div>
+<!-- ═══ CTA ═══ -->
+<section class="cta-section" id="contact">
+  <h2>READY TO<br><em>UPGRADE</em> YOUR FLEET?</h2>
+  <p>Whether you're running 50 carts or 50,000, AeroAxis scales with you. Let's talk about a free pilot program for your location.</p>
+  <div class="cta-actions">
+    <a href="mailto:hello@aeroaxis.ca" class="btn-primary btn-lg">
+      Get a Free Quote
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="tel:+18005551234" class="btn-outline2">📞 Book a Demo</a>
+  </div>
+</section>
 
-<div id="footerHTML"></div>
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="footer-logo">
+    <div class="nav-logo-mark" style="width:22px;height:22px;font-size:11px;">⚙</div>
+    AERO<span>AXIS</span>
+  </a>
+  <ul class="footer-links">
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Engineering</a></li>
+    <li><a href="#">Case Studies</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div class="footer-copy">© 2026 AeroAxis. Engineered in Canada.</div>
+</footer>
 
 <script src="js/cursor.js"></script>
-<script src="js/loadHTML.js"></script>
 </body>
 </html>
