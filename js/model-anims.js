@@ -6,8 +6,8 @@ playButton.addEventListener('click', () => {
 
 function modelAnim(){
     modelViewer = document.getElementById('modelViewer');
-    modelViewer.play();
+    modelViewer.play({ repetitions: 1 });/*
     setInterval(() => {
         modelViewer.pause();
-    }, 5000);
+    }, 10050);*/
 }
