@@ -79,15 +79,16 @@
       <div class="product-tick" style="transform:rotate(330deg)"></div>
 
       <div class="product-photo-wrap">
-    <model-viewer
-    src="assets/model/modelTextured.glb"
-    alt="avatar"
-    shadow-intensity="1"
-    camera-controls
-    auto-rotate
-    camera-orbit="0deg 60deg 105%"
-     >
-    </model-viewer>
+        <model-viewer
+        src="assets/model/modelAnim-compressed.glb"
+        alt="avatar"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        camera-orbit="0deg 60deg 105%"
+        id="modelViewer">
+        </model-viewer>
+        <button class="modelbutton" id="model-expand-button" onclick="modelAnim()">Expand View</button>
       </div>
 
       <!-- Floating spec bubbles -->
@@ -440,5 +441,6 @@
 </footer>
 
 <script src="js/cursor.js"></script>
+<script src="js/model-anims.js"></script>
 </body>
 </html>
